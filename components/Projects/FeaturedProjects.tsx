@@ -17,6 +17,7 @@ export default async function FeaturedProjects({ locale }: FeaturedProjectsProps
     title: t('title'),
     subtitle: t('subtitle'),
     viewProject: t('viewProject'),
+    sectionCategory: t('sectionCategory'),
     allProjects: {
       title: t('allProjects.title'),
       description: t('allProjects.description'),
