@@ -18,6 +18,7 @@ export default async function ProjectsPage({ locale }: ProjectsPageProps) {
       badge: t('hero.badge'),
       title: t('hero.title'),
       subtitle: t('hero.subtitle'),
+      sectionCategory: t('hero.sectionCategory'),
     },
     search: {
       placeholder: t('search.placeholder'),

@@ -28,8 +28,8 @@ interface Project {
 
 interface Translations {
   title: string;
-  subtitle: string;
   viewProject: string;
+  sectionCategory: string;  
   allProjects: {
     title: string;
     description: string;
@@ -155,7 +155,7 @@ export default function FeaturedProjectsClient({
               maxWidth: "600px", lineHeight: 1.75,
               fontFamily: "'Sora', sans-serif",
             }}>
-              {translations.subtitle}
+              {translations.sectionCategory}
             </p>
 
             {/* Ornament rule */}

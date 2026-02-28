@@ -149,6 +149,7 @@ export interface ProjectsIndex {
     badge: string;
     title: string;
     subtitle: string;
+     sectionCategory: string; 
   };
   search: {
     placeholder: string;
