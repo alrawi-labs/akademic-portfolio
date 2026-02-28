@@ -2,7 +2,8 @@
     "hero": {
         "badge": "Makaleler ve İçgörüler",
         "title": "Blog",
-        "subtitle": "Web geliştirme, tasarım ve harika yazılımlar oluşturma sanatı üzerine düşünceler."
+        "subtitle": "Web geliştirme, tasarım ve harika yazılımlar oluşturma sanatı üzerine düşünceler.",
+        "sectionCategory": "Tüm Makaleler"
     },
     "search": {
         "placeholder": "Makaleler, konular, etiketler ara…",
