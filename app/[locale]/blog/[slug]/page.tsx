@@ -5,7 +5,7 @@ import { blogPosts } from "@/data/blogData";
 import BlogDetailClient from "./BlogDetailClient";
 
 interface Props {
-  params: { slug: string; locale: string };
+  params: Promise<{ slug: string; locale: string }>;
 }
 
 export async function generateStaticParams() {
@@ -13,7 +13,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props) {
-  const post = blogPosts.find((p) => p.slug === params.slug);
+  const { slug } = await params;
+  const post = blogPosts.find((p) => p.slug === slug);
   if (!post) return {};
   return {
     title:       post.title,
@@ -27,7 +28,8 @@ export async function generateMetadata({ params }: Props) {
 }
 
 export default async function BlogDetailPage({ params }: Props) {
-  const post = blogPosts.find((p) => p.slug === params.slug);
+  const { slug } = await params;
+  const post = blogPosts.find((p) => p.slug === slug);
   if (!post) notFound();
 
   const locale = await getLocale();
